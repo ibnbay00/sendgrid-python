@@ -95,8 +95,7 @@ class Mail(object):
             mail["headers"] = headers
 
         if self.categories:
-            mail["categories"] = [category.get() for category in
-                                  self.categories]
+            mail["categories"] = self.categories
 
         if self.custom_args:
             custom_args = {}
